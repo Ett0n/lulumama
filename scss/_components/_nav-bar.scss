@@ -1,52 +1,50 @@
 .hdr {
-    background-color: $color_primaire;
-    padding: 2rem 20rem;
+  background-color: $color_primaire;
+  padding: 2rem 20rem;
 }
 
 .hdr_logo {
-    margin-block: .5rem;
+  margin-block: 0.5rem;
 
-    &__img {
-        width: 5rem;
-    }
+  &__img {
+    width: 5rem;
+  }
 }
 
 .hdr_title {
-    margin: .5rem;
+  margin: 0.5rem;
 
-    &__main,
-    &__subtitle {
-        margin: 0;
-        color: $color_primaire_light;
-    }
+  &__main,
+  &__subtitle {
+    margin: 0;
+    color: $color_primaire_light;
+  }
 }
 
-
-
 .nav-bar {
+  padding: 0;
+  &_list {
     padding: 0;
-    &_list {
-        padding: 0;
-        display: flex;
-        //flex-direction: column;
-        @include desktopView($breackpoint) {
-            flex-direction: row;
-        }
+    display: flex;
+    //flex-direction: column;
+    @include desktopView($breackpoint) {
+      flex-direction: row;
     }
+  }
 
-    &_item {
-        margin: 0;
-        padding: .5rem;
-        list-style: none;
+  &_item {
+    margin: 0;
+    padding: 0.5rem;
+    list-style: none;
 
-        &:hover {
-            background-color: $color_primaire_fonce;
-        }
+    &:hover {
+      background-color: $color_primaire_fonce;
     }
+  }
 
-    &_link {
-        margin: 0;
-        text-decoration: none;
-        color: $color_primaire_light;
-    }
+  &_link {
+    margin: 0;
+    text-decoration: none;
+    color: $color_primaire_light;
+  }
 }
