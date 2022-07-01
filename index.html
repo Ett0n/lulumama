@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scss</title>
+    <title>Home</title>
     <link rel="stylesheet" href="dist/style/style.min.css" />
   </head>
   <body>
@@ -21,20 +21,43 @@
       <nav class="nav-bar">
         <ul class="nav-bar_list">
           <li class="nav-bar_item">
-            <a href="" class="nav-bar_link active">Home</a>
+            <a href="#" class="nav-bar_link active">Home</a>
           </li>
           <li class="nav-bar_item">
-            <a href="" class="nav-bar_link">About</a>
+            <a href="about.html" class="nav-bar_link">About</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Titre de la page ingrwi30</h1>
+      <details class="listing">
+        <summary class="listing__hdr">Charleroi</summary>
+        <table class="listing__table">
+          <thead class="listing__table_head">
+            <tr class="listing__table_head_row">
+              <th>Destination</th>
+              <th>Départ</th>
+              <th>Quai</th>
+              <th>Retard</th>
+            </tr>
+          </thead>
+          <tbody class="listing__table_body">
+            <tr class="listing__table_body_row">
+              <td>Namur</td>
+              <td>20:00</td>
+              <td>1</td>
+              <td>10 mins</td>
+            </tr>
+            <tr class="listing__table_body_row">
+              <td>Bruxelles</td>
+              <td>20:12</td>
+              <td>2</td>
+              <td>0 mins</td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
     </main>
-    <div class="sidebar">
-      <h2 class="tile">Titre sidebar version 2</h2>
-    </div>
     <footer class="footer">
       <p><strong>SNCB</strong> by <a href="#">Pierre Charlier</a>.</p>
     </footer>
