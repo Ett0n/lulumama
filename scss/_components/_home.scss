@@ -1,0 +1,49 @@
+.listing {
+  margin-inline: $spacing;
+  max-width: 68rem;
+  box-shadow: inset 0 0 0 2px $color_primaire_light;
+}
+
+.listing__hdr {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 0 0 0 2px $color_primaire_light;
+  &::after {
+    content: "<";
+    transform: rotate(-90deg);
+    display: block;
+    font-weight: bold;
+    color: $color_primaire_fonce;
+  }
+}
+
+.listing__table {
+  padding: .5rem;
+  width: 100%;
+
+  &_head {
+
+    &_row th {
+      padding-block: 1rem;
+      text-align: start;
+    }
+  }
+
+  &_body {
+
+    &_row:nth-child(odd) {
+      background-color: $color_primaire_light;
+    }
+
+    &_row td {
+      padding: .3rem;
+    }
+  }
+}
+
+
+
