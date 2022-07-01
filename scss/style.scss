@@ -4,6 +4,8 @@
 @import "_components/nav-bar";
 @import "_components/footer";
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
   margin: 0;
   background-color: #fff;
@@ -12,10 +14,19 @@ body {
 p,
 h1,
 h2,
-h3 {
+h3,
+a,
+label,
+input,
+textarea {
   color: #07080a;
+  font-family: "Roboto", sans-serif;
+}
+.break {
+  display: block;
 }
 .sidebar {
   background: $color_primaire_fonce;
   padding: 1rem;
 }
+@import "_components/pageabout";

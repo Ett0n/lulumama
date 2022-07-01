@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scss</title>
+    <link rel="stylesheet" href="dist/style/style.min.css" />
+  </head>
+  <body>
+    <header class="hdr">
+      <h1 class="hdr_logo">
+        <a href="#" class="hdr_logo__link">
+          <img src="/img/android-icon-192x192.png" alt="Icone train" class="hdr_logo__img" />
+        </a>
+      </h1>
+      <div class="hdr_title">
+        <h2 class="hdr_title__main">Qui sommes-nous ?</h2>
+        <p class="hdr_title__subtitle">Des chercheurs en PWA</p>
+      </div>
+      <nav class="nav-bar">
+        <ul class="nav-bar_list">
+          <li class="nav-bar_item">
+            <a href="" class="nav-bar_link active">Home</a>
+          </li>
+          <li class="nav-bar_item">
+            <a href="" class="nav-bar_link">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="about__main">
+      <section>
+        <h1>Contactez nous</h1>
+        <form class="about__form" action="">
+          <div>
+            <label for="about__form__name">Votre nom:</label>
+            <input type="text" id="about__form__name" name="about__form__name" />
+          </div>
+          <div>
+            <label for="about__form__email">Votre email:</label>
+            <input type="text" id="about__form__email" name="about__form__email" />
+          </div>
+          <div>
+            <label for="about__form__message">Votre message:</label>
+            <textarea id="about__form__message" name="about__form__message" rows="8"></textarea>
+          </div>
+          <div class="about__form__rgpd">
+            <input type="checkbox" id="about_form_rgpd" name="about_form_rgpd" value="Bike" />
+            <label for="about_form_rgpd">Je donne l'autorisation d'utiliser mes données <a href="#">Voir les conditions de vie privée</a></label>
+          </div>
+          <input type="submit" value="Envoyer" class="about__form__submit" />
+          <a href="#">Annuler</a>
+        </form>
+      </section>
+      <section class="about__location">
+        <h2>Pour venir</h2>
+        <div class="about__location__address">
+          <p>Rue G. Lemaître 21 <span class="break"></span> 6041 Gosselies</p>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <!--le iframe utilise des règles dépréciées-->
+              <iframe width="600" height="150" id="gmap_canvas" src="https://maps.google.com/maps?q=Rue%20G.%20Lema%C3%AEtre%2021%20gosselies&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a>
+              </style>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p><strong>SNCB</strong> by <a href="#">Pierre Charlier</a>.</p>
+    </footer>
+  </body>
+</html>
